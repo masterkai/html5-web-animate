@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0 ;
+}
+
+.world{
+    position: relative;
+    width: 100%;
+    height: 8000px;
+    background-color: #fff;
+    transition: background .4s;
+}
+
+#animation_container{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 1400px;
+    min-width: 100%;
+    height: auto;
+    transform: translateY(-50%);
+    transition: width .4s;
+}
+
+canvas{
+    width: 100%;
+    height: auto;
+    border: 0;
+}
+
+@media screen and (max-width: 1600px) {
+    #animation_container{
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #animation_container{
+        width: 1600px;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
